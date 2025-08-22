@@ -6,14 +6,16 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <Header />
-      <div className="container -mt-7 text-center">
-        <Link href="/tasks/new" className="btn btn-primary w-full mx-auto">
-          Create Task
-          <span className="ml-2">
-            <LucidePlusCircle size={16} fontWeight={700} />
-          </span>
-        </Link>
+      <div className="sticky top-0 z-50">
+        <Header />
+        <div className="container -mt-7 text-center">
+          <Link href="/tasks/new" className="btn btn-primary w-full mx-auto">
+            Create Task
+            <span className="ml-2">
+              <LucidePlusCircle size={16} fontWeight={700} />
+            </span>
+          </Link>
+        </div>
       </div>
       <section className="container mt-10">
         <TaskList />
